@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartinha e Contador</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Gill Sans', sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .intro {
+            font-size: 32px;
+            margin-top: 0;
+        }
+
+        .counter {
+            font-size: 1.5em;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .counter span {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+
+        .carta1, .carta2, .carta3, .carta4 {
+            margin: 50px auto;
+            max-width: 80%;
+            text-align: center;
+            font-size: 1.5em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .carta1 img, .carta2 img, .carta3 img, .carta4 img {
+            margin: 20px 0;
+            border-radius: 15px;
+        }
+
+        /* Media Query para o Samsung Galaxy A32 */
+        @media only screen and (max-width: 412px) {
+            body {
+                font-size: 14px; /* Reduz o tamanho da fonte */
+            }
+
+            .intro h1 {
+                font-size: 24px; /* Ajusta o tamanho do título */
+            }
+
+            .counter {
+                font-size: 1.2em;
+            }
+
+            .counter span {
+                font-size: 1em;
+            }
+
+            .carta1, .carta2, .carta3, .carta4 {
+                max-width: 90%; /* Aumenta a largura para ocupar mais a tela */
+                font-size: 1.2em; /* Ajusta o tamanho da fonte das cartas */
+            }
+
+            .carta1 img, .carta2 img, .carta3 img, .carta4 img {
+                width: 80%; /* Ajusta o tamanho das imagens */
+                height: auto;
+            }
+
+            header {
+                padding: 15px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="intro" data-aos="fade-down">
+            <h1>Fazendo algo que te prometi, uma "carta" virtual</h1>
+            <p>Sim, não fui dormir e fiquei codando, não me xinga moi pfv, te amo.</p>
+        </div>
+        
+        <div class="counter">
+            <h2>Tempo Juntos</h2>
+            <span id="years"></span>
+            <span id="months"></span>
+            <span id="days"></span>
+            <span id="hours"></span>
+            <span id="minutes"></span>
+            <span id="seconds"></span>
+        </div>
+    </header>
+
+    <section>
+        <div class="carta1" data-aos="fade-right">
+            <p>MOI, estamos há quase 3 anos juntos, e é até difícil explicar o quanto minha vida mudou desde que você chegou. Antes, eu era só um cara perdido, sem rumo, sem vontade de fazer nada. Era preguiçoso, vivia num mundinho cinza, sem cor, sem brilho. Mas aí você apareceu... e mudou tudo.</p>
+            <img src="./heart for u.jpg" height="350px" width="350px">
+        </div>
+        <div class="carta2" data-aos="fade-left">
+            <p>Com você, comecei a enxergar o mundo de outra forma. Você me deu um motivo pra querer ser alguém melhor, não só por mim, mas por você. Você me fez acreditar que eu posso fazer a diferença. Eu me esforço mais nos estudos, corro atrás dos meus sonhos e, principalmente, tento ser a melhor versão de mim mesmo porque você merece isso. Você é minha luz na escuridão, meu porto seguro, minha maior fortuna.</p>
+            <img src="/ff31bceb-4e11-4f08-ac36-dacd56b08b36.jpg" height="350px" width="350px">
+            <p>Sabe, às vezes eu fico pensando como eu tive tanta sorte em te encontrar. De todas as pessoas do mundo, você escolheu ficar comigo. Comigo! Um cara cheio de defeitos, mas que tenta todos os dias te mostrar o quanto te ama. Amor, sem você eu sou nada. Minha vida seria como um campo vazio, sem flores, sem vida.</p>
+        </div>
+        <div class="carta3" data-aos="fade-up">
+            <p>Aprendi tantas coisas com você... coisas que nem sabia que precisava aprender. Você é meu ponto de equilíbrio, minha companheira, minha parceira de vida. Olhar nos seus olhos castanhos fofinhos me dá uma paz que eu nunca senti antes. É como se você fosse a resposta de todas as minhas dúvidas, o encaixe perfeito que eu nem sabia que estava procurando.</p>
+            <img src="./casal pixel vendo por do sol.jpg" height="350px" width="350px">
+        </div>
+        <div class="carta4" data-aos="zoom-in">
+            <p>Você sempre foi muito mais do que eu sonhei. Não sei se você percebe, mas eu sou bem sentimental. E agora tá eu aqui, com os olhos cheios de lágrimas, escrevendo isso em vez de dormir, só pra tentar colocar em palavras o quanto você é importante pra mim. Só que o que sinto é tão grande que parece impossível de explicar. Você é única, Evelyn. A primeira e única pessoa que eu amei, e a única que eu sempre vou amar. Eu sei que poderia ser “trocado” por alguém mais “pronto”, alguém que já tenha tudo resolvido na vida. Mas você escolheu ficar comigo. Você viu em mim algo que eu mesmo ainda não consigo ver. E é por isso que eu valorizo tanto o nosso amor. Eu sei que nada no mundo é mais importante do que isso que construímos juntos.</p>
+            <img src="./ef352fa1-5ae6-4d8e-b3fd-88d212626db4-removebg-preview.png" height="450px" width="350px">
+            <p>Te encontrar foi como ganhar aquele brawler lendário que todo mundo sonha, mas acha impossível. E eu ganhei. De uma chance em mil, você veio pra mim. É por isso que eu prometo cuidar de você, proteger você e estar ao seu lado sempre. Eu quero me casar com você, construir nossa família e passar o resto da vida te amando. Obrigada por nunca desistir de nós. Você é tudo pra mim, Evelyn. Eu te amo demais. Sempre vou te amar.</p>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializando animações
+        AOS.init({
+            duration: 1000,
+        });
+
+        // Função para calcular e exibir o contador de tempo
+        function updateCounter() {
+            const startDate = new Date('2022-03-20T00:00:00'); // Data inicial
+            const currentDate = new Date();
+            const timeDifference = currentDate - startDate;
+
+            const years = Math.floor(timeDifference / (1000 * 60 * 60 * 24 * 365.25)); // Anos
+            const months = Math.floor((timeDifference % (1000 * 60 * 60 * 24 * 365.25)) / (1000 * 60 * 60 * 24 * 30)); // Meses
+            const days = Math.floor((timeDifference % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24)); // Dias
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); // Horas
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60)); // Minutos
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000); // Segundos
+
+            // Atualizando o HTML com os valores calculados
+            document.getElementById('years').textContent = `${years} anos`;
+            document.getElementById('months').textContent = `${months} meses`;
+            document.getElementById('days').textContent = `${days} dias`;
+            document.getElementById('hours').textContent = `${hours} horas`;
+            document.getElementById('minutes').textContent = `${minutes} minutos`;
+            document.getElementById('seconds').textContent = `${seconds} segundos`;
+        }
+
+        // Atualizando a cada segundo
+        setInterval(updateCounter, 1000);
+
+        // Atualizando imediatamente ao carregar
+        updateCounter();
+    </script>
+</body>
+
+</html>
